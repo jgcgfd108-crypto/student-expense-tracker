@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon"
+      type="image/png"
+      href="{{ url_for('static', filename='images/logo.png') }}">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ExpenseTrack - Student Expense Manager</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/index.css') }}">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            💰 Expense<span>Track</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="{{ url_for('login') }}">
+                Login
+            </a>
+
+            <a class="nav-register"
+               href="{{ url_for('register') }}">
+                Get Started
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Main Hero Section -->
+
+    <main class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                ✨ Smart Money Management for Students
+            </div>
+
+
+            <h1>
+
+                Take Control of Your
+
+                <span>
+                    Student Expenses
+                </span>
+
+            </h1>
+
+
+            <p>
+
+                Track your daily expenses, manage your money,
+                and understand where your money goes.
+                Everything you need in one simple place.
+
+            </p>
+
+
+            <div class="buttons">
+
+                <a class="primary-btn"
+                   href="{{ url_for('register') }}">
+
+                    Get Started →
+
+                </a>
+
+
+                <a class="secondary-btn"
+                   href="{{ url_for('login') }}">
+
+                    Login
+
+                </a>
+
+            </div>
+
+
+            <div class="features">
+
+                <div>
+                    <strong>✓</strong>
+                    Easy to Use
+                </div>
+
+                <div>
+                    <strong>✓</strong>
+                    Track Expenses
+                </div>
+
+                <div>
+                    <strong>✓</strong>
+                    Manage Money
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Dashboard Preview -->
+
+        <div class="dashboard-preview">
+
+            <div class="preview-top">
+
+                <div>
+
+                    <small>
+                        Financial Overview
+                    </small>
+
+                    <h2>
+                        My Dashboard
+                    </h2>
+
+                </div>
+
+                <div class="online-dot"></div>
+
+            </div>
+
+
+            <!-- Balance -->
+
+            <div class="money-card">
+
+                <small>
+                    Available Balance
+                </small>
+
+                <h1>
+                    ₹8,450
+                </h1>
+
+                <p>
+                    Manage your money wisely
+                </p>
+
+            </div>
+
+
+            <!-- Income and Expense -->
+
+            <div class="mini-cards">
+
+                <div class="mini-card income">
+
+                    <span>
+                        💰
+                    </span>
+
+                    <small>
+                        Income
+                    </small>
+
+                    <h3>
+                        ₹15,000
+                    </h3>
+
+                </div>
+
+
+                <div class="mini-card expense">
+
+                    <span>
+                        💸
+                    </span>
+
+                    <small>
+                        Expenses
+                    </small>
+
+                    <h3>
+                        ₹6,550
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <!-- Recent Activity -->
+
+            <div class="activity">
+
+                <small>
+                    Recent Activity
+                </small>
+
+
+                <div class="activity-row">
+
+                    <span>
+                        🍔 Food
+                    </span>
+
+                    <b>
+                        - ₹250
+                    </b>
+
+                </div>
+
+
+                <div class="activity-row">
+
+                    <span>
+                        🚌 Travel
+                    </span>
+
+                    <b>
+                        - ₹100
+                    </b>
+
+                </div>
+
+
+                <div class="activity-row">
+
+                    <span>
+                        📚 Education
+                    </span>
+
+                    <b>
+                        - ₹500
+                    </b>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        © 2026 ExpenseTrack
+        • Manage Smarter. Spend Better.
+
+    </footer>
+
+</body>
+
+</html>
